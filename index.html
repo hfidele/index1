@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Bootcamp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(web-design-development-blog-2.jpg);
+        }
+        header {
+            background-color: rgb(27, 3, 78);
+            background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: rgb(16, 2, 46);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: rgb(27, 3, 78);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button{
+            margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600 bold;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(to right, rgb(2, 14, 2),rgb(27, 3, 78) );
+        }
+    h2{
+        font-size: x-large;
+        font-weight: 900;
+        color: blue;
+    }
+    </style>
+    
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Web Development Bootcamp</h1>
+</header>
+
+<nav>
+    <a  id="project" href="https://hfidele.github.io/project/projectideas.html">Projects</a>
+    <a  id="document">Documents</a>
+    <a id="exercises">Exercises</a>
+    <a  id="comment">Comments</a>
+    <a href="https://www.tiktok.com/@mrwillycreativity250">Videos</a>
+    <a href="https://hfidele.github.io/about/about.html" id="about">About</a>
+</nav>
+
+<section id="content">
+    <section id="lessons">
+        <h2>LESSONS</h2>
+        <button id="previous-lessons">Previous Lessons</button>
+        <button id="todays-lesson">Today's Lesson</button>
+      </section>
+</section>
+
+<footer>
+    <p>&copy; 2024 Contacts:+250787970496. All rights reserved.</p>
+</footer>
+<!---->
+<script>
+    document.getElementById('project').addEventListener('click', function() {
+        document.getElementById('content').innerHTML = `
+            <h1>Welcome to project section</h1>
+            <p>No new project</p>
+         <a href="https://hfidele.github.io/project/projectideas.html"><button type="submit">Click here to create a new project</button></a>
+        `;
+    });
+
+    document.getElementById('document').addEventListener('click', function() {
+        document.getElementById('content').innerHTML = `
+        <h2>Welcome to document section</h2>
+        <h1>Download Document</h1>
+    <p>Click the link below to download the document:</p>
+    <a href="INTRODUCTION TO SOFTWARE DEVELOPMENT.docx" download>Lesson one</a> <br>
+    <a href="LESSON 2.docx" download>Lesson two</a>
+        `;
+    });
+
+    document.getElementById('comment').addEventListener('click', function() {
+        document.getElementById('content').innerHTML = `
+        <h2>Welcome to comment section</h2>
+            <p>Join us in our exciting journey to becoming proficient web developers! Our online classes run 
+                daily from 15:00 to 16:00. If you're not yet part of our WhatsApp group, simply text me at 0787970496,
+                 and I'll gladly assist you in joining. Let's embark on this learning adventure together!</p>
+            
+        `;
+    });
+    document.getElementById('exercises').addEventListener('click', function() {
+        document.getElementById('content').innerHTML = `
+       <h2>Exercise Section</h2>
+       <h1>Download Document</> <br>
+        <a href="Exercises on 13 April 2024.docx" download>Click here to download Exercises for the lesson 1</a>
+         `
+        
+    });
+
+    // Function to display the alert message
+    function displayAlert() {
+            alert("Videos for Previous lessons and Today's lesson will be Uploaded on Friday. Keep reading documents.");
+        }
+
+        // Get the button element
+        var button = document.getElementById('previous-lessons');
+
+        // Add a click event listener to the button
+        button.addEventListener('click', function() {
+            // Call the function to display the alert
+            displayAlert();
+        });
+
+        // Function to display the alert message
+    function displayAlert() {
+            alert("Videos for Previous lessons and Today's lesson will be Uploaded on Friday. Keep reading documents.");
+        }
+
+        // Get the button element
+        var button = document.getElementById('todays-lesson');
+
+        // Add a click event listener to the button
+        button.addEventListener('click', function() {
+            // Call the function to display the alert
+            displayAlert();
+        });
+</script>
+
+</body>
+</html>
